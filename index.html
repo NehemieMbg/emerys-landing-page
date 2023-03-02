@@ -14,23 +14,24 @@
 
   <body class="bg-gray-900">
     <!-- NAVBAR -->
-	
-    <!-- HERO SECTION -->
-    <nav class="flex justify-between py-4 px-8 w-full bg-gray-900">
+    <nav class="flex justify-between py-4 px-8 w-full absolute z-50">
       <div class="flex items-center gap-2">
         <img src="./images/emerys-teal.svg" alt="emerys-logo" class="h-12" />
 
         <h1 class="text-white text-2xl font-semibold">emrs</h1>
       </div>
       <div class="flex items-center gap-8 text-gray-200">
-        <div class="hover:text-teal-600">
-          <a
-            href="https://github.com/NehemieMbg/emerys_web3_dex"
-            target="_blank"
-          >
-            GitHub
-          </a>
-        </div>
+        <a href="#deposit" class="hover:text-teal-600">Deposit</a>
+
+        <a href="#about_us"  class="hover:text-teal-600">About us</a>
+        <a
+          href="https://github.com/NehemieMbg/emerys_web3_dex"
+          target="_blank"
+          class="hover:text-teal-600"
+        >
+          GitHub
+        </a>
+
         <div
           class="bg-teal-700 py-2 px-6 rounded-md hover:bg-teal-900 cursor-pointer"
         >
@@ -38,34 +39,38 @@
         </div>
       </div>
     </nav>
+	
+    <!-- HERO SECTION -->
     <div>
       <!-- Component Code -->
 
       <div
-        class="relative h-screen w-full flex items-center justify-center text-center bg-cover bg-center"
+        class="relative h-screen w-full flex items-end  p-16 text-center bg-cover bg-center"
         style="
-          background-image: url(./images/c46d9d80c21e3d9a34fdff59434ddf82.jpg);
+          background-image: url(./images/crypto-investing.jpg);
         "
       >
-        <div
-          class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"
-        ></div>
-
-        <main class="px-4 sm:px-6 lg:px-8 z-10">
+      <div
+        class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"
+      ></div>
+      <div>
+        
+      </div>
+        <div class="px-4 px-6 lg:px-8 z-10">
           <div class="text-left">
             <h2
-              class="text-4xl tracking-tight font-medium text-gray-400 md:text-6xl"
+              class="text-4xl tracking-tight font-medium text-gray-200 text-6xl"
             >
-              <span class="text-teal-600 font-bold">EMERYS</span> Protocol
+              Access <span class="font-bold text-teal-600">Every</span> Token
             </h2>
-            <p class="text-gray-300 text-2xl">
-              Build your portfolio using our decentralized exchange for tokens
+            <p class="text-gray-200 text-3xl font-thin">
+              Trade, earn and build on our decentralized exchange your portfolio.
             </p>
-            <div class="mt-5 sm:mt-8 sm:flex justify-center">
+            <div class="mt-5 mt-8 flex ">
               <div class="rounded-md shadow">
                 <a
                   href="http://localhost:3000/"
-                  class="w-full flex items-center justify-center px-8 py-3  rounded-md text-white bg-teal-600 hover:bg-teal-800 "
+                  class="w-full flex items-center justify-center px-8 py-3  rounded-md text-teal-600 bg-gray-200 hover:bg-teal-700 hover:text-gray-200"
                 >
                   Get started
                 </a>
@@ -75,7 +80,69 @@
               </div>
             </div>
           </div>
-        </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web site info -->
+    <div class="flex justify-center mt-32 mb-16">
+
+      <div class=" h-full flex justify-around p-16 border-2 rounded-3xl border-opacity-50 gap-32">
+        <div class="text-center pl-16">
+          <h2 class="text-gray-100 text-3xl font-bold">2.0 M+</h2>
+          <p class="text-gray-400">Total trades</p>
+        </div>
+  
+        <div class="border-l-2 "></div>
+  
+        <div class="text-center">
+          <h2 class="text-gray-100 text-3xl font-bold">950 K+</h2>
+          <p class="text-gray-400">Total active users</p>
+        </div>
+  
+        <div class="border-r-2"></div>
+  
+        <div class="text-center pr-16">
+          <h2 class="text-gray-100 text-3xl font-bold">0.10%</h2>
+          <p class="text-gray-400">Transaction fee</p>
+        </div>
+    </div>
+    </div>
+
+    <div id="deposit" class=" p-16 mt-32 flex justify-around items-center">
+      <div>
+        <h2 class="text-gray-100 text-4xl font-bold text-teal-600">Instant Deposit</h2>
+        <p class="text-gray-100 font-thin text-2xl">With our deposit functionality, you can <span class="font-semibold">deposit</span> your token fast and at a low cost. <br>Fun fact we are the cheapest decentralized exchange on the market!</p>
+      </div>
+      <div>
+        <img src="./images/deposti-withdraw-img.png" alt="deposit" width="300">
+      </div>
+    </div>
+
+    <div id="about_us" class="p-32">
+      <div class="p-16 px-32 border-2 rounded-2xl">
+
+        <h2 class="text-gray-100 text-4xl font-bold text-gray-100 text-center pb-8">About us</h2>
+        <p class="text-gray-100 font-thin text-2xl text-center pb-8">We are a young team of devoted developers, who couldn't find a place to trade tokens at a low cost. We couldn't find the tools we needed either. Some of us have been trading in the stock exchange for more than 10 years. Some of us did end up here because we were fascinated about the blockchain and it's infrastructure.</p>
+        <div class="text-gray-100 font-normal text-2xl flex gap-8 justify-center pb-8">
+          <div class="flex gap-1 hover:text-teal-600">
+
+            <a href="https://github.com/NehemieMbg" target="_blank" class="">Team's GitHub</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+            
+          </div>
+          
+          <div class="flex gap-1 hover:text-teal-600">
+
+            <a href="https://www.linkedin.com/in/nehemie-mombanga/" target="_blank">LinkedIn</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+            
+          </div>
+        </div>
       </div>
     </div>
   </body>
